@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy E-Commerce</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Pharmacy E-Commerce</h1>
+    <div class="product">
+        <img src="https://via.placeholder.com/100" alt="Paracetamol">
+        <h3>Paracetamol</h3>
+        <p>RWS500</p>
+        <button onclick="addToCart('Paracetamol', 500)">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="https://via.placeholder.com/100" alt="Ibuprofen">
+        <h3>Ibuprofen</h3>
+        <p>RWF1000</p>
+        <button onclick="addToCart('Ibuprofen', 1000)">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="https://via.placeholder.com/100" alt="Vitamin C">
+        <h3>Vitamin C</h3>
+        <p>RWF2000</p>
+        <button onclick="addToCart('Vitamin C', 2000)">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="https://via.placeholder.com/100" alt="Hand Sanitizer">
+        <h3>Hand Sanitizer</h3>
+        <p>RWF2000</p>
+        <button onclick="addToCart('Hand Sanitizer', 2000)">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="https://via.placeholder.com/100" alt="Face Mask">
+        <h3>Face Mask</h3>
+        <p>RWF 300</p>
+        <button onclick="addToCart('Face Mask', 300)">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="https://via.placeholder.com/100" alt="First Aid Kit">
+        <h3>First Aid Kit</h3>
+        <p>RWF 50000</p>
+        <button onclick="addToCart('First Aid Kit', 50000)">Add to Cart</button>
+    </div>
+
+    <div class="cart">
+        <h2>Cart</h2>
+        <ul id="cartItems"></ul>
+        <div class="total">Total: RWF<span id="total">0</span></div>
+    </div>
+
+    <div class="checkout">
+        <h2>Checkout</h2>
+        <form id="checkoutForm">
+            <label>Name:</label>
+            <input type="text" id="name" required><br><br>
+            <label>Address:</label>
+            <input type="text" id="address" required><br><br>
+            <label>Phone:</label>
+            <input type="text" id="phone" required><br><br>
+            <button type="submit">Place Order</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
